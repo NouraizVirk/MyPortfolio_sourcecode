@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background: #000000;
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+
+  /* Enhanced glass effect with white/subtle glow */
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.05),
+      inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .glass:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1),
+      0 0 20px rgba(255, 255, 255, 0.1),
+      inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  /* Professional button with emerald glow */
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-white rounded-lg font-medium;
+    @apply transition-all duration-300;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  }
+
+  .btn-primary:hover {
+    @apply bg-primary;
+    box-shadow: 0 6px 25px rgba(16, 185, 129, 0.5),
+      0 0 30px rgba(16, 185, 129, 0.4);
+    transform: translateY(-2px);
+  }
+
+  /* Emerald glow text effect */
+  .glow-text {
+    text-shadow: 0 0 20px rgba(16, 185, 129, 0.5),
+      0 0 40px rgba(16, 185, 129, 0.3);
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Spline container */
+.spline-container {
+  position: relative;
+  overflow: hidden;
+  background: #000000;
+}
+
+.spline-container iframe {
+  background: #000000 !important;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-primary/30 text-white;
+}
+
+/* Scrollbar styling - minimal for black theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
