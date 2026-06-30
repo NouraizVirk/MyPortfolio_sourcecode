@@ -25,7 +25,7 @@ Before the deployment will work with the database, you **MUST** add the database
 
    **Value:**
    ```
-   postgresql://neondb_owner:npg_3a1neTCtilYz@ep-old-waterfall-ahxbr3o9-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require
+   postgresql://username:password@ep-xxxxx.us-east-1.aws.neon.tech/neondb?sslmode=require
    ```
 
    **Environments:** Select all three:
