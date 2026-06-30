@@ -1,6 +1,9 @@
-# Modern Developer Portfolio Template
+# My Portfolio Template
 
-A highly customizable, blazing-fast, and visually stunning developer portfolio template built with modern web technologies. This template includes a beautiful front-end and a secure admin dashboard powered by a serverless PostgreSQL database (Neon) to manage your projects, skills, and messages on the fly.
+Feel free to use this open sourced template This template includes a front-end and a secure admin dashboard powered by a serverless PostgreSQL database (Neon) to manage your projects, skills, and messages on the fly.
+
+## Note
+ for my own ease i made an admin page as well so that i can easily update my projects and details without needing to change the code evertime , you can skip it if you want , aslo i am am using the 3d model form spline.com , you can chose any other model as well.Feel free to modify it how ever you want !
 
 ## 🚀 Features
 
